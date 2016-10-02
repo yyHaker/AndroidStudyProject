@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="所有应用"
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#c610ef"
+        android:padding="5dp"
+        />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lv_main_app"
+        android:layout_weight="1" />
+</LinearLayout>

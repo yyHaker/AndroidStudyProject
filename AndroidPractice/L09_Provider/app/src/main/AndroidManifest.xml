@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a57217.l09_provider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--ContentProvider的配置，exported表示是否可以让其他应用访问-->
+        <provider
+            android:authorities="com.example.a57217.l09_provider.PersonProvider"
+            android:name="com.example.a57217.l09_provider.PersonProvider"
+            android:exported="true"/>
+    </application>
+
+</manifest>
